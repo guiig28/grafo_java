@@ -1,0 +1,25 @@
+package controller;
+
+import model.estrutura.grafo.GrafoLista;
+
+public class GrafoListaController {
+    public GrafoListaController() {
+        super();
+    }
+
+    public String teste1() {
+        GrafoLista<Integer> g = new GrafoLista<Integer>();
+
+        g.add(0, 1);
+        g.add(0, 4);
+        g.add(1, 2);
+        g.add(1, 3);
+        g.add(1, 4);
+        g.add(2, 3);
+        g.add(3, 4);
+
+        g.remove(3);
+
+        return g.toString();
+    }
+}
